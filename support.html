@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel ="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel ="stylesheet" type="text/css" href="css/carousel.css">
+  <link rel ="stylesheet" type="text/css" href="css/nav.css">
+
+  <title>Choc O Lat | Support</title>
+
+
+</head>
+<body>
+
+<nav>
+<div id="logo"><img src="assets/logo.png" height="100" width="150"></div>
+
+<label for="drop" class="toggle">Welcome to Choc o lat<alt="Choc O Lat Logo"></label>
+<input type="checkbox" id="drop" />
+    <ul class="menu">
+      <li><a href="support.html">Support</a></li>
+      <li><a href="choc.html">Chocolate</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="basket.html">Basket</a></li>
+    </ul>
+</nav>
+
+
+
+
+
+<div class="row">
+  <div class="col-3">
+    <div class="aside">
+      <h2>Who are we?</h2>
+      <p> if you want to contact us use the social media links below </p>
+    </div>
+  </div>
+
+  <div class="col-6 slides">
+    <h1>Support</h1>
+    <p>Welcome to our support page, if you have an issue please let us know by
+      leaving a review below</p>
+
+
+      <div class="comment">
+    <textarea id="title" type="text "rows="20" cols="40" onkeyup="Allow()"
+    placeholder="Did you like our chocolate?"></textarea>
+    <input type="submit" value="Submit" onclick="insert()" style="width:45%;" /></form>
+    </div>
+    <div id="display"></div>
+    <script type="text/javascript">
+    var titles = [];
+    var titleInput = document.getElementById("title");
+    var messageBox = document.getElementById("display");
+    function Allow()
+    {
+    if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value !="")
+    {
+    user.title.value="";
+    alert("Please Enter only alphabets");
+    }
+    window.location.reload()
+    }
+    function insert () {
+    titles.push(titleInput.value);
+    clearAndShow();
+    }
+    function clearAndShow ()
+    {
+    titleInput.value = "";
+    messageBox.innerHTML = "";
+    messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
+    }
+    </script>
+
+
+
+
+  </div>
+
+
+
+  <div class="col-3 right">
+    <div class="aside">
+      <h2>Alergies</h2>
+      <p>if you have an alergy then please inform us so we can make our products better</p>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+  <p><h2>Tel: 07937 316710 Postcode: M28 7H<h2></p>
+</div>
+
+
+
+
+</body>
+</html>

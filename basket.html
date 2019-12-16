@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel ="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel ="stylesheet" type="text/css" href="css/carousel.css">
+  <link rel ="stylesheet" type="text/css" href="css/nav.css">
+
+  <title>Choc O Lat | Basket</title>
+
+
+</head>
+<body>
+
+<nav>
+<div id="logo"><img src="assets/logo.png" height="100" width="150"></div>
+
+<label for="drop" class="toggle">Welcome to Choc o lat<alt="Choc O Lat Logo"></label>
+<input type="checkbox" id="drop" />
+    <ul class="menu">
+      <li><a href="support.html">Support</a></li>
+      <li><a href="choc.html">Chocolate</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="basket.html">Basket</a></li>
+    </ul>
+</nav>
+
+
+
+
+
+<div class="row">
+  <div class="col-3">
+    <div class="aside">
+      <h2>Mix and Match</h2>
+      <p>Here at choc o lat we dont care how much chocolate you purchase but insted on the quality of the chocolate  </p>
+    </div>
+  </div>
+
+  <div class="col-6 slides">
+    <h1>Basket</h1>
+    <p>Listed below is all the chcolate we currently sell and it is updated frequently
+      to show more chocolate we are going to sell.</p>
+
+    </div>
+
+
+
+  <div class="col-3 right">
+    <div class="aside">
+      <h2>Payment Method</h2>
+      <p>here we will give you a link to use your paypal account so you can pay for our products</p>
+  </div>
+</div>
+</div>
+<ul>
+  <li onclick="dropcart()" class="cartitem1">Products<span id="cartopenersymbol">↓</span></li>
+</ul>
+<ul id="productcart">
+<li class="cartitem"> <img src="images/choc1.png" width="25%" height="25%">Chocolate Bites with strawberries and cream £4.00</li>
+<li class="cartitem"> <img src="images/choc2.png" width="25%" height="25%">Chocolate Brownie £6.00</li>
+<li class="cartitem"> <img src="images/choc3.png"  width="25%" height="25%">Chocolate biscuits and chocolate dip £5.50</li>
+<li class="cartitem"> <img src="images/choc4.png" width="25%" height="25%">Dark Chocolate pieces £2.50</li>
+<li class="cartitem"> <img src="images/choc5.png" width="25%" height="25%">Hand crafted white chocolate £3.00</li>
+
+<br>
+<ol>
+	<li><p>001 Chocolate Bites with strawberries and cream &pound;4.00</p></li>
+	<li><p>002 Chocolate Brownie &pound;6.00</p></li>
+  <li><p>003 Chocolate biscuits and chocolate dip &pound;5.50</p></li>
+  <li><p>004 Dark Chocolate pieces &pound;2.50</p></li>
+  <li><p>005 Hand crafted white chocolate &pound;3.00</p></li>
+	
+	<br>
+	<button type ="button" onclick ="itemBuy()">Make Purchase</button>
+	<p id = "bought">...</p>
+	<button type ="button" onclick = "enterDetails()">Enter Details</button>
+	<p id = "yourInfo">Your Details...</p>
+	<button type ="button" onclick = "Refresh()">Clear Results</button>
+
+
+
+<li id="cartcloser" onclick="closecart()">↑</li>
+</ul>
+
+
+
+
+
+
+
+
+<div class="footer">
+  <p><h2><h2></p>
+</div>
+
+
+
+<!-- External JavaScript links go below  -->
+<script src="js/cart.js"></script>
+<script src="js/dropdown.js"></script>
+<script src="js/details.js"></script>
+<script src="js/refresh.js"></script>
+</body>
+</html>
